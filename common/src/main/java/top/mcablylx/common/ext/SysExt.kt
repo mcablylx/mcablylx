@@ -8,4 +8,4 @@ import top.mcablylx.common.AppContext
  * otherwise, I do not know who create it either
  * If anyone finds out I have bug, I can only kill him quietly
  */
-fun Toast.show(msg: String) = Toast.makeText(AppContext, msg, Toast.LENGTH_LONG).show()
+inline fun Any.show(msg: String) = Toast.makeText(AppContext, msg, Toast.LENGTH_LONG).show()
