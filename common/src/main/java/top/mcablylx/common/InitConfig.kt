@@ -3,7 +3,6 @@ package top.mcablylx.common
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.ContextWrapper
-import android.widget.Toast
 
 /**
  * If there is no bug, Created by Mcablylx on 2018-10-19.
@@ -13,9 +12,16 @@ import android.widget.Toast
 
 @SuppressLint("StaticFieldLeak")
 private lateinit var mContext: Context
+lateinit var mPrefName: String
 
-fun initialization(context: Context){
-    mContext = context.applicationContext
+
+fun initialization(context: Context) {
+    initialization(context, "config")
 }
 
-object AppContext:ContextWrapper(mContext)
+fun initialization(context: Context, prefName: String) {
+    mContext = context.applicationContext
+    mPrefName = prefName
+}
+
+object AppContext : ContextWrapper(mContext)
