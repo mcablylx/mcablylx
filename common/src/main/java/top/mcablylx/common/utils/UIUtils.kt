@@ -13,7 +13,7 @@ fun isRunInMainThread(): Boolean {
 }
 
 fun getMainThreadId(): Int {
-    return android.os.Process.myTid()
+    return AppContext.mainThreadId
 }
 
 fun <T> runInMainThread(block: () -> T) {
