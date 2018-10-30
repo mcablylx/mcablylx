@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">mc_kt_common_mvp</string>
+
+    <string name="contentText">fruitday.SampleTitleBehavior   "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "</string>
 </resources>
