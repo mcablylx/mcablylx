@@ -7,10 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.ListView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import top.mcablylx.R.id.contentTextView
 import top.mcablylx.common.coroutine.runSuspend
 import top.mcablylx.common.coroutine.startCoroutine
 import top.mcablylx.common.ext.pref
@@ -49,12 +46,12 @@ class MainActivity : AppCompatActivity() {
             Log.d("FUCK", "当前的线程ID: ${android.os.Process.myTid()}")
             e.printStackTrace()
         }
-       // StatusBarUtil.setTranslucentStatus(this)
-        if (!StatusBarUtil.setStatusBarDarkTheme(this, true)) {
-            //如果不支持设置深色风格 为了兼容总不能让状态栏白白的看不清, 于是设置一个状态栏颜色为半透明,
-            //这样半透明+白=灰, 状态栏的文字能看得清
-            StatusBarUtil.setStatusBarColor(this,0x55000000)
-        }
+        StatusBarUtil.setTranslucentStatus(this)
+//        if (!StatusBarUtil.setStatusBarDarkTheme(this, true)) {
+//            //如果不支持设置深色风格 为了兼容总不能让状态栏白白的看不清, 于是设置一个状态栏颜色为半透明,
+//            //这样半透明+白=灰, 状态栏的文字能看得清
+//            StatusBarUtil.setStatusBarColor(this,0x55000000)
+//        }
       //  rlv.adapter = ListAdapter(this)
 
     }
