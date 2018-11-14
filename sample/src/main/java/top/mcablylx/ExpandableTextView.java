@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.ListAdapter;
+
 
 public class ExpandableTextView extends LinearLayout {
     ListAdapter adapter;
@@ -62,7 +64,7 @@ public class ExpandableTextView extends LinearLayout {
             // 点击收起
             contentTextView.setMaxLines(initLines);
         }
-        adapter.getList().set(poistion, flag);
+       // adapter.getList().set(poistion, flag);
     }
 
     /**

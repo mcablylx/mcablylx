@@ -12,6 +12,7 @@ import kotlin.coroutines.experimental.CoroutineContext
  * 主线程 Continuation 包装类
  */
 class MainThreadContinuationWrapper<T>(private val continuation: Continuation<T>) : Continuation<T> {
+
     override val context: CoroutineContext = continuation.context
 
     override fun resume(value: T) {

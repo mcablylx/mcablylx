@@ -9,5 +9,6 @@ import org.junit.Test
  */
 @Test
 fun test(){
-
+    val i = 5
+    println(i.javaClass)
 }
