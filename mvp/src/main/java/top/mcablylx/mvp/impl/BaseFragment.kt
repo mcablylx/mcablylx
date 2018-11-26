@@ -1,7 +1,7 @@
 package top.mcablylx.mvp.impl
 
-import android.app.Fragment
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import top.mcablylx.mvp.IMvpView
 import top.mcablylx.mvp.IPresenter
 import kotlin.coroutines.experimental.buildSequence
